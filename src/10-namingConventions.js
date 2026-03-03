@@ -24,4 +24,16 @@ export const toCamelCase = (str) => {
  * @param {string} str the input name
  * @returns {string} the new output name
  */
-export const toSnakeCase = (str) => {};
+export const toSnakeCase = (str) => {
+    let result = ""
+
+   for (const letter of str) {
+    if (letter === letter.toUpperCase() && letter !== letter.toLowerCase()) {
+        // c'est une majuscule
+        result += "_" + letter.toLowerCase();
+    } else {
+        result += letter;
+    }
+}
+    return result
+};
