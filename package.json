@@ -1,0 +1,23 @@
+{
+    "scripts": {
+        "test": "vitest"
+    },
+    "dependencies": {
+        "vitest": "^4.0.18"
+    },
+    "name": "grace-adalgo-teizred",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/adatechschool/grace-adalgo-teizred.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/adatechschool/grace-adalgo-teizred/issues"
+    },
+    "homepage": "https://github.com/adatechschool/grace-adalgo-teizred#readme"
+}
