@@ -1,3 +1,6 @@
+import { describe, test, expect } from "vitest"
+import { calculator } from "./1-calculator.js"
+
 describe("calculator", () => {
   test("adds two numbers", () => {
     expect(calculator(2, 3, "+")).toBe(5);
