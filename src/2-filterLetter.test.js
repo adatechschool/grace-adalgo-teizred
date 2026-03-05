@@ -1,9 +1,12 @@
+import { describe, test, expect, vi, beforeEach } from "vitest";
+import { filterLetter } from "./2-filterLEtter.js";
+
 describe("filterLetter", () => {
-  const letterCallback = jest.fn((e) => `${e} is a letter`);
-  const notLetterCallback = jest.fn((e) => `${e} is NOT a letter`);
+  const letterCallback = vi.fn((e) => `${e} is a letter`);
+  const notLetterCallback = vi.fn((e) => `${e} is NOT a letter`);
 
   beforeEach(() => {
-    jest.clearAllMocks();
+    vi.clearAllMocks();
   });
 
   test("calls letter callback if argument is not a number", () => {

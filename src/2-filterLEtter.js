@@ -21,4 +21,20 @@ filterLetter("8", callback1, callback2)
 // should execute callback2
 */
 
-export const filterLetter = (arg, call, call2) => {};
+// On exporte la fonction filterLetter qui prend 3 paramètres :
+// - arg : la valeur à vérifier (lettre ou chiffre)
+// - call : le callback à exécuter si c'est une lettre
+// - call2 : le callback à exécuter si c'est un chiffre
+
+export const filterLetter = (arg, call, call2) => {
+    // isNaN(arg) retourne true si arg n'est PAS un nombre
+    // (= c'est une lettre ou un caractère spécial)
+    if (isNaN(arg)) {
+         // si c'est une lettre/caractère,
+         //  on appelle le 1er callback avec arg et on retourne le résultat
+        return call(arg);
+    }else{
+       // Sinon (c'est un chiffre), on appelle le 2ème callback avec arg et on retourne le résultat
+        return call2(arg);
+    }
+};
