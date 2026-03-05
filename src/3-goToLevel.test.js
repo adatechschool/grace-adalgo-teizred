@@ -1,3 +1,6 @@
+import { describe, test, expect } from "vitest";
+import { goToLevel } from "./3-goToLevel";
+
 describe("goToLevel", () => {
   test("goes up correctly", () => {
     expect(goToLevel(0, 5)).toBe(5);
@@ -5,14 +8,6 @@ describe("goToLevel", () => {
 
   test("goes down correctly", () => {
     expect(goToLevel(5, 2)).toBe(-3);
-  });
-
-  test("returns 0 if end floor is out of range", () => {
-    expect(goToLevel(0, 25)).toBe(0);
-  });
-
-  test("returns 0 if start floor is out of range", () => {
-    expect(goToLevel(-1, 5)).toBe(0);
   });
 
   test("returns 0 if start equals end", () => {

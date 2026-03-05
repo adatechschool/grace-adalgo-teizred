@@ -17,4 +17,13 @@ const start = 3
 const end = 0
 goToLevel(startFloor, FinalPosition) => return -3
 */
-export const goToLevel = () => {};
+
+export const goToLevel = (startFloor, FinalPosition) => {
+    if (startFloor < FinalPosition) {
+        return FinalPosition - startFloor;
+    } else if (startFloor > FinalPosition) {
+        return FinalPosition - startFloor;
+    } else {
+        return FinalPosition - startFloor;
+    }
+};
